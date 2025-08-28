@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie THB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #444;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ff3c3c;
+    }
+
+    nav {
+      background-color: #121212;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff3c3c;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x400?text=Movie+THB+Banner') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      margin-bottom: 20px;
+      color: #ff3c3c;
+      font-size: 1.8em;
+    }
+
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 60, 60, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-card .info {
+      padding: 10px;
+    }
+
+    .movie-card .info h4 {
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .movie-card .info p {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    footer {
+      background-color: #121212;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9em;
+      border-top: 2px solid #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Movie THB</h1>
+    <p>Your gateway to unlimited movies</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
+    <a href="#">Login</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Watch the Latest Blockbusters Now</h2>
+  </div>
+
+  <section class="section">
+    <h3>Featured Movies</h3>
+    <div class="movies">
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Movie+1" alt="Movie 1">
+        <div class="info">
+          <h4>Action Hero</h4>
+          <p>Explosive action and thrilling adventure.</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Movie+2" alt="Movie 2">
+        <div class="info">
+          <h4>Romantic Escape</h4>
+          <p>A love story that defies all odds.</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Movie+3" alt="Movie 3">
+        <div class="info">
+          <h4>Comedy Nights</h4>
+          <p>Laugh out loud with this hilarious ride.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Categories</h3>
+    <div class="movies">
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Action" alt="Action">
+        <div class="info">
+          <h4>Action</h4>
+          <p>High-octane thrillers and epic battles.</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Drama" alt="Drama">
+        <div class="info">
+          <h4>Drama</h4>
+          <p>Emotional stories and powerful performances.</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300?text=Horror" alt="Horror">
+        <div class="info">
+          <h4>Horror</h4>
+          <p>Spine-chilling tales and dark mysteries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Movie THB. All rights reserved.
+  </footer>
+
+</body>
+</html>
